@@ -1,4 +1,4 @@
-# aws-user-infrastructure
+# aws_user_infrastructure
 A repo to store all of the terraform code for aws user creation
 
 # Terraform AWS User Creation Template
@@ -19,7 +19,6 @@ Edit the variables.tf to reflect your user's information.
 ## State:
 Change the s3 path for state storage for your project.  If this doesn't happen, your project may overwrite another project.
 ```
-# backend cannot have any interpolation!
 terraform {
   backend "s3" {
     encrypt = true
